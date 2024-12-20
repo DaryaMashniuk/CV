@@ -1,0 +1,31 @@
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+  padding :5%;
+  box-shadow: 1px 5px 5px 1px rgb(165, 165, 165);
+}
+.work {
+  width:100%;
+}
+.AboutMe {
+  display: flex;
+}
+.left {
+  width: 30%;
+  margin-right: 3%;
+}
+.project h4 {
+  margin:0;
+}
+.projectDesc{
+  display:grid;
+  grid-template-columns: repeat(12,1fr);
+}
+.projectDesc p {
+  grid-column: 1/8;
+}
+.projectDesc img {
+  grid-column: 9/13;
+  width: 100%;
+  margin: auto;
+}
