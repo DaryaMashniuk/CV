@@ -83,14 +83,14 @@ p{
 }
 ul li{
   margin:0;
-
 }
 .tg{
   display: flex;
   margin-top: 40px;
 }
 .tg a {
-  margin-left:1%;
+  margin:auto 0;
+  margin-left:2%;
   color: black;
 }
 .project a {
@@ -120,15 +120,30 @@ ul li{
   body{
     font-size: 14px;
   }
+  ul {
+    padding :0;
+    list-style-type: none;
+  }
+  .skillsDesc p{
+    background-color: rgb(235, 235, 235) ;
+    width:65%;
+    padding:1%
+  }
+
+
 } 
 @media screen and (max-width: 750px) {
   .projectDesc img {
     width: 85%;
   }
+  .project{
+    background-color: rgb(235, 235, 235);
+    padding:5%;
+  }
 }
 @media screen and (max-width: 650px) {
   .projectDesc img {
-    width: 65%;
+    width: 90%;
   }
   .profile-picture {
     width: 200px;
@@ -168,10 +183,61 @@ ul li{
   }
   .projectDesc img {
     grid-column: 2/11;
-    width: 65%;
-    margin: auto;
+    width: 95%;
+    margin:5% auto;
+    
   }
   .project{
     margin-bottom: 4   5px;
+  }
+  body{
+    margin:0;
+    font-size: 10px;
+  }
+  .wrapper {
+    width: 80%;
+    padding :4%;
+    box-shadow: none;
+  }
+  .skillsDesc{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .profile-picture {
+    width: 120px;
+    height: 120px; 
+  }
+  h1 {
+    font-size: 2.75em;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .profile-picture {
+    width: 90px;
+    height: 90px; 
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 260px) {
+
+  .profile-picture {
+    width: 80px;
+    height: 80px; 
+  }
+  h1 {
+    font-size: 2.3em;
+  }
+  h2 {
+    font-size: 1.5em;
   }
 }
