@@ -37,7 +37,7 @@ export const PROJECTS= [
     {
         title: "MineSweeper",
         description: "Minesweeper is a classic puzzle game where players uncover squares on a grid while avoiding hidden mines. Users can choose the grid size, making the game easier or more challenging. The goal is to clear the field without detonating any mines by using numerical clues to deduce their locations.",
-        image: "assets/Mine.gif",
+        image: "assets/MineSweeper.gif",
         link: "https://daryamashniuk.github.io/Minesweeper/",
         technologies: "Js , CSS",
     },
