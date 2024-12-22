@@ -1,6 +1,6 @@
 import "./App.css";
 import { PROJECTS } from "./utils/CONSTANTS.JS";
-import Project from "./components/project";
+import Project from "./components/Project";
 
 function App() {
   return (
