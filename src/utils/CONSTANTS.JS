@@ -1,7 +1,51 @@
 export const PROJECTS= [
     {
+        title: "Lamoda Replica",
+        description: "The E-Commerce application offers dynamic product filtering and sorting. Users can search by name and description with case-insensitive matching, filter by color using multi-select checkboxes, and set a price range with input fields. It provides instant results and supports sorting by price and popularity, ensuring an efficient shopping experience.",
+        image: "assets/Lamoda.gif",
+        link: "https://daryamashniuk.github.io/LamodaReplica/",
+        technologies: "React, chancejs , UUID, Node.js, CSS",
+    },
+    {
+        title: "Notion",
+        description: "The Multi-User Note Taking Application allows users to register, log in, and manage their notes securely. Each user can create, edit, and delete their own notes, providing a personalized and efficient way to organize thoughts. With a backend server for user data storage, the app ensures data integrity and security, offering a seamless experience for note management.",
+        image: "assets/Notion.gif",
+        link: "https://github.com/DaryaMashniuk/NotionReplica",
+        technologies: "React, UUID, Node.js, CSS, JSON-server, Zod, bscrypt ",
+    },
+    {
+        title: "API & SPA",
+        description: "The Multi-Page React Application leverages the JSONPlaceholder API to create a seamless user experience for browsing and viewing posts. Utilizing react-router-dom, the app features dynamic routing, allowing users to navigate between a home page, a list of posts, and detailed views of individual posts. The application effectively demonstrates asynchronous data fetching and state management.",
+        image: "assets/SPA.gif",
+        link: "https://daryamashniuk.github.io/SPA-react-/",
+        technologies: "React, Tailwind, React-router-dom",
+    },
+    {
         title: "Todo List",
         description: "The Todo List application is a user-friendly task management tool that allows users to create, edit, delete, and mark tasks as completed. It features filters to hide completed tasks, a case-insensitive search for titles and descriptions, and a multi-select filter for task importance.",
-        image: "./assets/Rectangle.png"
-    }
+        image: "assets/Todo.gif",
+        link: "https://daryamashniuk.github.io/TodoList/",
+        technologies: "React, Tailwind, Node.js",
+    },    
+    {
+        title: "Tic-Tac-Toe",
+        description: "Tic-Tac-Toe is a simple strategy game where players take turns marking spaces on a grid. Users can customize the grid size, allowing for variations beyond the traditional 3x3 format. The objective is to align three (or more) of your marks in a row, column, or diagonal before your opponent does.",
+        image: "assets/TicTacToe.gif",
+        link: "https://daryamashniuk.github.io/Tic-Tac-Toe/",
+        technologies: "Js , CSS",
+    },  
+    {
+        title: "MineSweeper",
+        description: "Minesweeper is a classic puzzle game where players uncover squares on a grid while avoiding hidden mines. Users can choose the grid size, making the game easier or more challenging. The goal is to clear the field without detonating any mines by using numerical clues to deduce their locations.",
+        image: "assets/Mine.gif",
+        link: "https://daryamashniuk.github.io/Minesweeper/",
+        technologies: "Js , CSS",
+    },
+    {
+        title: "Bulls and Cows",
+        description: "Bulls and Cows is a classic logic game where players guess a secret number made up of unique digits. After each guess, feedback is given as 'bulls' (correct digits in the right position) and 'cows' (correct digits in the wrong position). The objective is to guess the secret number in the fewest attempts.",
+        image: "assets/Cows.gif",
+        link: "https://daryamashniuk.github.io/BullsAndCows/",
+        technologies: "Js , CSS",
+    },
 ]

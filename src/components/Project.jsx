@@ -1,19 +1,20 @@
 import React from "react";
 
-function project(props) {
+function Project({title,description,image,link,technologies}) {
   return (
     <div className="project">
-      <h4>Todo List</h4>
+      <a href={link} target="_blank">
+      <h4>{title}</h4>
       <div className="projectDesc">
         <p>
-          The Todo List application is a user-friendly task management tool that allows users to create, edit, delete,
-          and mark tasks as completed. It features filters to hide completed tasks, a case-insensitive search for titles
-          and descriptions, and a multi-select filter for task importance.
+          {description}
         </p>
         <img src={image}></img>
       </div>
+      <p className="technologies"><span className="tech">Technologies: </span>{technologies}</p>
+      </a>
     </div>
   );
 }
 
-export default project;
+export default Project;

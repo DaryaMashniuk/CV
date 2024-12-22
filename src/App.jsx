@@ -1,17 +1,27 @@
 import "./App.css";
-import image from "/src/assets/Rectangle.png";
+import { PROJECTS } from "./utils/CONSTANTS.JS";
+import Project from "./components/project";
+
 function App() {
   return (
     <div className="wrapper">
-      <h1> Mashnyuk darya </h1>
-      <h2> Software Engineer</h2>
+      <div className="header">
+        <div className="profile-name">
+          <h1> Mashnyuk darya </h1>
+          <h2> Web developer</h2>
+        </div>
+        <div className="profile-picture">
+          <img src="assets/Profile.jpg" alt="Profile Picture"></img>
+        </div>
+      </div>
       <div className="container">
         <div className="work">
           <h3> Work experience </h3>
           <p>
-            Highly capable product manager with 4+ years experience in product management, 12+ years in IT. Got 180% of
-            revenue goal in adult-content tech company. Filled the backlog, determined the priority and ROI of features.
-            Organized A/B tests. I can work with
+          I am a student at Belarusian State University, Faculty of Mechanics and Mathematics and a freelance web developer. I focus on building efficient, user-oriented applications that enhance user
+            experience. I am continuously honing my skills in web development and actively seeking opportunities to
+            innovate and grow in this dynamic field. My commitment to excellence drives me to deliver high-quality work
+            that meets client needs and exceeds expectations.
           </p>
         </div>
         <div className="AboutMe">
@@ -25,31 +35,62 @@ function App() {
               <p>English (B2)</p>
               <p>Russian ( Native )</p>
             </div>
+            <div className="skills">
+              <h3>Skills</h3>
+              <div className="skillsDesc">
+                <div className="frontend">
+                  <p>Frontend</p>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>TailwindCss</li>
+                  </ul>
+                </div>
+                <div className="backend">
+                  <p>Backend</p>
+                  <ul>
+                    <li>NodeJs</li>
+                  </ul>
+                </div>
+
+                <div className="database">
+                  <p>DataBases</p>
+                  <ul>
+                    <li>SQL</li>
+                    <li>MySql</li>
+                  </ul>
+                </div>
+                <div className="other">
+                  <p>Other</p>
+                  <ul>
+                    <li>Git</li>
+                    <li>Figma</li>
+                    <li>npm</li>
+                  </ul>
+                </div>
+              </div>
+            
+            </div>  
+            <div className="tg">
+                <img src="assets/telegram.png" width='25px'></img>
+                <a href="https://t.me/Darya_Mash">@Darya_Mash</a>
+              </div>
           </div>
+
           <div className="projects">
             <h3>Projects</h3>
-            <div className="project">
-              <h4>Todo List</h4>
-              <div className="projectDesc">
-                <p>
-                  The Todo List application is a user-friendly task management tool that allows users to create, edit,
-                  delete, and mark tasks as completed. It features filters to hide completed tasks, a case-insensitive
-                  search for titles and descriptions, and a multi-select filter for task importance.
-                </p>
-                <img src={image}></img>
-              </div>
-            </div>
-            <div className="project">
-              <h4>Todo List</h4>
-              <div className="projectDesc">
-                <p>
-                  The Todo List application is a user-friendly task management tool that allows users to create, edit,
-                  delete, and mark tasks as completed. It features filters to hide completed tasks, a case-insensitive
-                  search for titles and descriptions, and a multi-select filter for task importance.
-                </p>
-                <img src={image}></img>
-              </div>
-            </div>
+            {PROJECTS.map((project) => (
+              <Project
+                key={project.title}
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                link={project.link}
+                technologies={project.technologies}
+              />
+            ))}
           </div>
         </div>
       </div>
