@@ -7,7 +7,7 @@ function App() {
     <div className="wrapper">
       <div className="header">
         <div className="profile-name">
-          <h1> Mashnyuk darya </h1>
+          <h1> Mashnyuk Darya </h1>
           <h2> Web developer</h2>
         </div>
         <div className="profile-picture">
@@ -52,6 +52,7 @@ function App() {
                   <p>Backend</p>
                   <ul>
                     <li>NodeJs</li>
+                    <li>Java</li>
                   </ul>
                 </div>
 
@@ -60,6 +61,7 @@ function App() {
                   <ul>
                     <li>SQL</li>
                     <li>MySql</li>
+                    <li>PostgreSQL</li>
                   </ul>
                 </div>
                 <div className="other">
